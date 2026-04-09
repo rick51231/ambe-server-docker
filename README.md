@@ -7,5 +7,13 @@ Based on [md380tools](https://github.com/travisgoodspeed/md380tools) and  [DVSwi
 ## Setup
 - Clone this repository `git clone https://github.com/rick51231/ambe-server-docker`
 - Build image `cd ambe-docker-server && docker build -t ambe-server .`
-- Run `docker run -p 2470:2470/udp -dit ambe-server`
-- Use UDP port `2470` with Analog_Bridge or similar
+- Run `docker run -p 127.0.0.0:2460:2460/udp -dit ambe-server`
+- Use UDP port `2460` with Analog_Bridge or similar
+
+Configuration example:
+```ini
+[GENERAL]
+decoderFallBack = true
+useEmulator = true
+emulatorAddress = 127.0.0.1:2460
+```
