@@ -12,4 +12,4 @@ RUN systemctl disable md380-emu
 
 WORKDIR /opt/md380-emu
 
-CMD /opt/md380-emu/qemu-arm-static /opt/md380-emu/md380-emu -S 2460 -vv
+CMD /opt/md380-emu/qemu-arm-static /opt/md380-emu/md380-emu -S 2470 -vv
